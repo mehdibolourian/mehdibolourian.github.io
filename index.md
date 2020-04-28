@@ -5,7 +5,7 @@
 ### Projects:
 
 [Design and Implementation of a GSM-controlled LED Notice Board based on AVR microcontroller and Sim800 GSM module](http://github.com/mehdibolourian/gsm-notice-board)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/image1.jpg?raw=true"/>
 
 ---
 
