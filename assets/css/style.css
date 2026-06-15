@@ -143,7 +143,7 @@ img { max-width: 100%; display: block; }
 .page {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 2rem 6rem;
+  padding: 0 2rem 4rem;
   position: relative;
   z-index: 1;
 }
@@ -155,7 +155,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .section-title {
@@ -163,7 +163,7 @@ img { max-width: 100%; display: block; }
   font-size: 2rem;
   color: var(--charcoal);
   font-weight: 400;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.8rem;
   line-height: 1.2;
 }
 
@@ -178,16 +178,16 @@ img { max-width: 100%; display: block; }
   height: 3px;
   background: linear-gradient(90deg, var(--gold), var(--gold-light));
   border-radius: 2px;
-  margin: 0.75rem 0 2.5rem;
+  margin: 0.5rem 0 1.8rem;
 }
 
 /* ── HERO (HOME) ── */
 .hero {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 4rem;
+  gap: 2.5rem;
   align-items: center;
-  padding: 5rem 0 4rem;
+  padding: 3.5rem 0 3rem;
 }
 
 .hero-eyebrow {
@@ -344,9 +344,9 @@ img { max-width: 100%; display: block; }
 
 .news-item {
   display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 1.5rem;
-  padding: 1.25rem 0;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
   border-bottom: 1px solid var(--border);
   align-items: start;
   transition: background var(--trans);
@@ -358,23 +358,29 @@ img { max-width: 100%; display: block; }
 
 .news-date {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--muted);
-  padding-top: 0.2rem;
+  padding-top: 0.15rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .news-badge {
   display: inline-block;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.15rem 0.55rem;
+  padding: 0.12rem 0.45rem;
   border-radius: 3px;
-  margin-bottom: 0.4rem;
   font-weight: 500;
+  width: fit-content;
 }
 
 .badge-pub    { background: #EAF3FF; color: #1A5AA8; }
@@ -384,17 +390,18 @@ img { max-width: 100%; display: block; }
 .badge-service { background: #FFF0F0; color: #A33B2E; }
 
 .news-title {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--charcoal);
-  margin-bottom: 0.3rem;
-  line-height: 1.5;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .news-desc {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ── RESEARCH INTERESTS (HOME) ── */
@@ -436,7 +443,7 @@ img { max-width: 100%; display: block; }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .timeline-item::before {
@@ -514,14 +521,14 @@ img { max-width: 100%; display: block; }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.25rem;
+  gap: 0.85rem;
 }
 
 .card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.2rem;
   transition: all var(--trans);
   position: relative;
   overflow: hidden;
@@ -672,14 +679,14 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
 }
 
-/* ── PRESENTATIONS ── */
-.pres-list {
+/* ── PUBLICATIONS ── */
+.publ-list {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.pres-item {
+.publ-item {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -691,12 +698,12 @@ img { max-width: 100%; display: block; }
   transition: all var(--trans);
 }
 
-.pres-item:hover {
+.publ-item:hover {
   box-shadow: var(--shadow);
   border-left: 3px solid var(--gold);
 }
 
-.pres-type {
+.publ-type {
   font-family: var(--font-mono);
   font-size: 0.65rem;
   text-transform: uppercase;
@@ -707,12 +714,11 @@ img { max-width: 100%; display: block; }
   display: inline-block;
 }
 
-.pres-invited  { background: var(--gold-pale); color: #7A5A00; }
-.pres-conf     { background: #EAF3FF; color: #1A5AA8; }
-.pres-workshop { background: #F0F5F0; color: #2A6040; }
-.pres-seminar  { background: #F5EEFF; color: #5B2EA3; }
+.publ-journal  { background: var(--gold-pale); color: #7A5A00; }
+.publ-conf     { background: #EAF3FF; color: #1A5AA8; }
+.publ-workshop { background: #F0F5F0; color: #2A6040; }
 
-.pres-title {
+.publ-title {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--charcoal);
@@ -720,19 +726,19 @@ img { max-width: 100%; display: block; }
   line-height: 1.45;
 }
 
-.pres-event {
+.publ-event {
   font-size: 0.84rem;
   color: var(--muted);
   margin-bottom: 0.3rem;
 }
 
-.pres-location {
+.publ-location {
   font-size: 0.78rem;
   color: var(--muted);
   font-family: var(--font-mono);
 }
 
-.pres-date {
+.publ-date {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--muted);
@@ -881,8 +887,8 @@ footer {
   .pub-item { grid-template-columns: 1fr; }
   .pub-number { display: none; }
 
-  .pres-item { grid-template-columns: 1fr; }
-  .pres-date { text-align: left; }
+  .publ-item { grid-template-columns: 1fr; }
+  .publ-date { text-align: left; }
 
   .footer-inner { flex-direction: column; text-align: center; }
 }
