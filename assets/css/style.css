@@ -49,7 +49,7 @@ img { max-width: 100%; display: block; }
   position: fixed;
   top: 0; right: 0;
   width: 480px; height: 480px;
-  opacity: 0.028;
+  opacity: 0.1;
   pointer-events: none;
   z-index: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='69'%3E%3Cpolygon points='30,0 60,17.3 60,51.9 30,69.2 0,51.9 0,17.3' fill='none' stroke='%23C8960C' stroke-width='1.5'/%3E%3C/svg%3E");
@@ -716,7 +716,7 @@ img { max-width: 100%; display: block; }
 
 .publ-journal  { background: var(--gold-pale); color: #7A5A00; }
 .publ-conf     { background: #EAF3FF; color: #1A5AA8; }
-.publ-workshop { background: #F0F5F0; color: #2A6040; }
+.publ-inprogress { background: #F0F5F0; color: #2A6040; }
 
 .publ-title {
   font-size: 0.95rem;
